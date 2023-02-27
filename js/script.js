@@ -1,117 +1,34 @@
 'use strict';
 
-//Домашнее задание
-// Создайте объект city1 (var city1 = {}), укажите у него свойства name 
-// (название города, строка) со значением «ГородN» и population 
-// (населенность города, число) со значением 10 млн.
-
-// Создайте объект city2 через нотацию {name: "ГородM", population: 1e6}.
-
-// Создайте у объектов city1 и city2 методы getName(), которые вернут 
-// соответствующие названия городов.
-
-// Создайте методы exportStr() у каждого из объектов. Этот метод должен 
-// возвращать информацию о городе в формате 
-// «name=ГородN\npopulation=10000000\n». Для второго города будет строка 
-// со своими значениями. Примечание: можно обращаться к каждому свойству 
-// через цикл for/in, но методы объекта возвращать не нужно.
-
-// Создайте глобальную функцию getObj(), которая возвращает this. 
-// А у каждого из объектов city1 или city2 метод getCity, который 
-// ссылается на getObj. Проверьте работу метода. Примечание: к объекту 
-// вызова можно обратиться через this..
-
-// function getObj() {
-//     return this
+// function buttonClick () {
+//     let element = document.getElementById('element');
+//     element.innerHTML = 'Ку-ку! А я <b>жирный!</b>'
 // }
 
-// var city1 = {
-//     name: 'ГородN',
-//     population: 10000000,
-//     getName() {
-//      return city1.name;
-//     },
-//    exportStr() {
-//         for(let key in city1) {
-//             if(typeof(city1[key]) !== 'function') {
-//               console.log(`${key}=${city1[key]}`);
-//             }
-//         };
-//     },
-//     getCity: getObj
-// };
-// city1.getName();
-// city1.exportStr();
-// alert('get city?');
-
-
-// var city2 = {
-//     name: 'ГородM',
-//     population: 1e6,
-//     getName() {
-//         return city2.name;
-//     },
-//     exportStr() {
-//         for(let key in city2) {
-//             if(typeof(city2[key]) !== 'function') {
-//             console.log(`${key}=${city2[key]}`)}
-//         }
-//     },
-//     getCity: getObj
-// };
-// city2.getName();
-// city2.exportStr();
-
-
-
-// Создайте массив d1 с числовыми величинами 45,78,10,3.  
-// Добавьте в массив d1 еще одно число ( d1[7] = 100). 
-// Выведите в консоль весь массив и его элементы с индексами 6 и 7.
-
-// const d1 = [45, 78, 10, 3];
-// d1[7] = 100;
-// console.log(d1);
-
-// Создайте массив d2 с числовыми величинами 45,78,10,3. 
-// Посчитайте в переменную sum2 сумму чисел в нем, при помощи цикла for.
-
-// const d2 = [45, 78, 10, 3];
-// let sum2;
-
-// function count() {
-//     sum2 = 0;
-//     d2.forEach(function(item) {
-//         sum2 += item;
-//     })
-//     return console.log(sum2);
+// function buttonClick() {
+//     let element = document.getElementById('element');
+//     element.outerHTML = '<h3>Абзац превратился в h3</h3>'
 // }
-// count(d2);
 
-// Создайте массив d3 с числовыми величинами 45,78,10,3. 
-// Добавьте в массив d3 еще одно число (например, d[7] = 100) 
-// Посчитайте в переменную sum3 сумму чисел в нем, при помощи цикла for/in.
+// function buttonClick() {
+//     let element = document.querySelector('.element');
+//     element.outerHTML = `<h3>${element.innerHTML}</h3>`
 
-// const d3 = [45, 78, 10, 3];
-// d3[7] = 100;
-// function calc() {
-//     let sum3 = 0;
-//     for(let key in d3) {
-//         if ( typeof(d3[key] !== undefined )) {
-//             sum3 += d3[key];
-//         }
-//     }
-//     return console.log(sum3);
 // }
-// calc(d3);
 
-// Создайте массив d4 с числовыми величинами 45,78,10,3. 
-// Напишите функцию сортировки my(a,b), которая при вызове d4.sort(my) 
-// отсортирует элементы массива по убыванию чисел. Вызовите d4.sort(my)
+// function buttonClick() {
+//     let input1 = document.getElementById('firstNum');
+//     let input2 = document.getElementById('secondNum');
+//     let sum = +input1.value + +input2.value;
+//     let answer = document.querySelector('.answer');
 
-// const d4 = [45, 78, 10, 3];
-
-// function my(a, b) {
-//     return b - a;
+//     answer.innerHTML = `${sum}`;
 // }
-// d4.sort(my);
-// console.log(d4);
+
+
+// function buttonClick() {
+//  let text = document.querySelectorAll('.text');
+//  for(let i=0; i<=text.length; i++) {
+//     text[i].innerHTML = i;
+//  }
+// }
